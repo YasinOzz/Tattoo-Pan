@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Piercing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styleP.css" />
+  </head>
+
+  <body>
+    <nav style="height: 100dvh">
+      <video id="background-video" autoplay loop muted playsinline>
+        <source src="src/Piercing Video.mp4" type="video/mp4" />
+        Ihr Browser unterstützt das Videoformat nicht.
+      </video>
+      <div class="nav-container">
+        <div id="burger-menu" class="iconamoon--menu-burger-horizontal burger-menu"></div>
+        <div id="nav-left">
+          <ul>
+            <li>
+              <a href="index.html"><span>Home</span></a>
+            </li>
+            <li>
+              <a href="hakkimizda.html"><span>Hakkımızda</span></a>
+            </li>
+            <li>
+              <a href="tattoo.html"><span>Tattoo</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img src="src/logo.JPG" alt="Logo" />
+        </div>
+        <div id="nav-right">
+          <ul>
+            <li>
+              <a href="piercing.html"><span>Piercing</span></a>
+            </li>
+            <li>
+              <a href="faq.html"><span>SSS</span></a>
+            </li>
+            <li>
+              <a class="contact" href="#map-container"><span>Bize ulaşın</span></a>
+            </li>
+          </ul>
+          <div id="close-menu" class="icon-park-outline--close-one close-menu"></div>
+        </div>
+      </div>
+      <span class="iconoir--page-down"></span>
+    </nav>
+    <div id="piercing-container">
+      <div class="image-box">
+        <div><img class="card" src="src/Gauges (1).png" alt="" /></div>
+        <div><img class="card" src="src/Gauges (2).png" alt="" /></div>
+        <div><img class="card" src="src/Gauges (3).png" alt="" /></div>
+      </div>
+      <h1 id="piercing-header">Piercing – Senin Tarzın, Bizim İşçiliğimiz</h1>
+      <p id="piercing-description">
+        Stüdyomuza hoş geldiniz – profesyonel piercingler için ilk adresiniz! Yılların deneyimi ve vücut sanatına
+        olan<br />
+        tutkumuzla size en yüksek kaliteyi ve geniş bir seçim yelpazesini sunuyoruz. Klasik, modern ya da sıra dışı<br />
+        olsun, tarzınıza uygun yüzlerce farklı piercing seçeneğimiz mevcut. Deneyimli piercing uzmanlarımız, en
+        yüksek<br />
+        hassasiyetle çalışır, sadece steril malzemeler kullanır ve kişisel tarzınızı mükemmel bir şekilde yansıtmak
+        için<br />
+        size özel danışmanlık sağlar. İster ilk piercinginizi yaptırıyor olun, ister koleksiyonunuzu genişletmek isteyin
+        burada emin ellerdesiniz.
+      </p>
+    </div>
+    <div id="map-container">
+      <div id="map"></div>
+      <div id="address">
+        <h2>Adresimiz</h2>
+        <p><b>Tattoo Pan</b></p>
+        <p>Kavacık, Gedikoğlu iş merkezi, Fatih Sultan Mehmet Cd.</p>
+        <p>34820 Beykoz/İstanbul</p>
+        <p>Türkiye</p>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/tattoo.pan/" target="_blank" aria-label="Instagram">
+          <span class="icomoon-free--instagram"></span>
+        </a>
+        <a href="https://wa.me/+905388333511" target="_blank" aria-label="WhatsApp">
+          <span class="fa-brands--whatsapp-square"></span>
+        </a>
+      </div>
+
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Hakkımızda</a></li>
+          <li><a href="tattoo.html">Tattoo</a></li>
+          <li><a href="piercing.html">Piercing</a></li>
+          <li><a href="faq.html">SSS</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer-text">© 2024 Tattoo Pan. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV6lBWLC0CNzxed1amshBg6C_Gp8lJ90A&callback=initMap&v=weekly"
+      async
+      defer
+    ></script>
+  </body>
+</html>

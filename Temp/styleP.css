@@ -1,0 +1,253 @@
+body {
+  background-color: #3f3f3f;
+}
+
+#background-video {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+}
+
+/* Piercing-Container Styles */
+#piercing-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #333; /* Sanfter Hintergrundton */
+  border-radius: 15px; /* Runde Ecken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Weicher Schatten */
+  text-align: center; /* Überschrift und Text zentrieren */
+  transition: all 0.3s ease; /* Weicher Übergang bei Größenänderung */
+}
+
+.image-box {
+  display: flex;
+  justify-content: space-around; /* Abstand zwischen den Bildern */
+  align-items: center; /* Zentriert die Bilder vertikal */
+  margin-bottom: 20px;
+  gap: 10px; /* Abstand zwischen den Karten */
+}
+
+.card {
+  width: 450px;
+  transition: width 0.3s ease; /* Übergang bei Größenänderung */
+}
+
+#piercing-header {
+  font-size: 2.5rem; /* Große Überschrift */
+  color: #fff; /* Helle Farbe für bessere Lesbarkeit */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+#piercing-description {
+  font-size: 1.3rem; /* Etwas größere Schrift für besseren Komfort */
+  line-height: 1.8; /* Höherer Zeilenabstand für Lesbarkeit */
+  color: #fff; /* Helle Farbe für besseren Kontrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media Queries für kleinere Bildschirme */
+@media (max-width: 1500px) {
+  .card {
+    width: 350px; /* Verkleinert die Bilder für mittlere Bildschirme */
+  }
+
+  #piercing-header {
+    font-size: 2rem; /* Anpassung der Überschriftengröße */
+  }
+
+  #piercing-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  #piercing-container {
+    padding: 15px;
+  }
+
+  .card {
+    width: 300px; /* Verkleinert die Bilder weiter für Tablets */
+  }
+
+  #piercing-header {
+    font-size: 1.8rem;
+  }
+
+  #piercing-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .card {
+    width: 230px; /* Verkleinert die Bilder weiter für Tablets */
+  }
+}
+@media (max-width: 768px) {
+  .description-container {
+    height: 70vh;
+    flex-direction: column; /* Inhalte untereinander anzeigen */
+    align-items: center;
+    text-align: center;
+    padding: 2em 2em;
+  }
+
+  .description-text {
+    width: 90%;
+    font-size: 0.9rem; /* Schriftgröße verkleinern */
+  }
+
+  .description-logo {
+    width: 80%;
+    justify-content: center; /* Logo zentrieren bei kleinerem Bildschirm */
+  }
+
+  .description-logo img {
+    width: 250px; /* Weitere Reduzierung des Logos für Mobilgeräte */
+  }
+
+  .review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+    margin: 50px auto;
+  }
+
+  .review-card {
+    width: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgb(70, 69, 69);
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .stars {
+    color: gold;
+    font-size: 1.2rem;
+  }
+
+  .read-more {
+    color: rgb(168, 168, 172);
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  #google-img {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    width: 200px;
+    height: 80px;
+  }
+
+  #map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Abstand zwischen Karte und Adresse */
+    width: 100%;
+  }
+
+  #map {
+    width: 100%;
+  }
+
+  #address {
+    margin-right: 0rem;
+  }
+
+  .burger-menu {
+    width: 70px;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  #nav-left,
+  #nav-right {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    height: 140px;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    padding: 20px;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out; /* Animation hinzufügen */
+    transform: translateY(-20%);
+  }
+
+  #nav-right {
+    top: 280px;
+  }
+
+  .nav-links-visible {
+    display: flex !important;
+    transform: translateY(0);
+  }
+
+  .show-close {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -170px;
+    right: 20px;
+  }
+
+  .logo {
+    margin: 20px;
+  }
+
+  #nav-left ul,
+  #nav-right ul {
+    flex-direction: column; /* Links untereinander statt nebeneinander darstellen */
+    width: 100%;
+  }
+
+  #nav-left li,
+  #nav-right li {
+    margin: 2px;
+  }
+
+  #nav-left a,
+  #nav-right a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 150px; /* Minimalgröße der Bilder für sehr kleine Geräte */
+  }
+
+  #piercing-header {
+    font-size: 1.3rem;
+  }
+
+  #piercing-description {
+    font-size: 0.9rem;
+  }
+}
